@@ -40,45 +40,116 @@
       color: white;
     }
   }
-
-  & button {
-    background-color: #48752c;
-    color: white;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 300ms linear;
-  }
-
-  & button:hover {
-    filter: brightness(85%);
-  }
 }
 
+& .login {
+  background-color: #48752c;
+  color: white;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+& .login:hover {
+  filter: brightness(85%);
+}
 .navigation {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
+/* Body */
 
+.form-wrapper {
+  background-color: white;
+  width: fit-content;
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 20px;
+  border-radius: 12px;
 
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  gap: 15px;
+
+  & h2 {
+    color: #48752c;
+  }
+
+  & .inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  & .input-label-wrapper {
+    position: relative;
+    width: 100%;
+
+    & label {
+      position: absolute;
+      background-color: white;
+      left: 10px;
+      bottom: 30px;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: #48752c;
+    }
+
+    & input {
+      border: 2px solid #48752c;
+      padding: 10px;
+      width: calc(100% - 20px);
+      border-radius: 4px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: right;
+    & .cancel {
+      border: 1px solid #48752c;
+      color: #48752c;
+      background: transparent;
+      font-size: 16px;
+      border-radius: 4px;
+      padding-left: 30px;
+      padding-right: 30px;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    & .cancel:hover {
+      background-color: #48752c2f;
+    }
+  }
+}
 
 /* Footer */
 
-
 .footer-wrapper {
-    position: fixed;
-    background-color: rgb(35, 45, 78);
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    color: white;
-    padding-right: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  position: fixed;
+  background-color: rgb(35, 45, 78);
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  color: white;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
