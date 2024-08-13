@@ -1,1 +1,1 @@
-# Quantori Fron-End project
+# Quantori Front-End Project
