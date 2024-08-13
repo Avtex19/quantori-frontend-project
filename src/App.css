@@ -4,7 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
 
   & nav {
     width: 100%;
@@ -58,4 +61,24 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+
+
+
+
+/* Footer */
+
+
+.footer-wrapper {
+    position: fixed;
+    background-color: rgb(35, 45, 78);
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    color: white;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
