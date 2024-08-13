@@ -9,6 +9,10 @@
   padding-right: 30px;
   background-color: white;
 
+  & .three-dots-menu {
+    display: none;
+  }
+
   & nav {
     width: 100%;
     display: flex;
@@ -72,10 +76,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: clamp(40%, 40%, 40%);
   padding: 20px;
   border-radius: 12px;
-
 }
 .login-form {
   display: flex;
@@ -152,4 +155,50 @@
   padding-right: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrapper {
+    nav {
+      display: none;
+    }
+
+    .header-login-btn {
+      display: none;
+    }
+
+    .three-dots-menu {
+      display: inline;
+      border: 2px solid #48752c;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .login-form {
+    .inputs-container {
+      flex-direction: row;
+
+      & label {
+        font-size: 10px;
+        bottom: 33px;
+      }
+    }
+
+    .buttons {
+      flex-direction: column;
+
+      .cancel {
+        font-size: 12px;
+        padding: 5px;
+      }
+      .login {
+        font-size: 12px;
+      }
+    }
+  }
 }

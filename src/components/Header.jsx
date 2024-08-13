@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./../App.css";
 import AccountSymbol from "./../assets/account-icon.svg";
+import ThreeDotsSymbol from './../assets/three-dots-icon.svg';
 
 export default function Header() {
   const [nav, setNav] = useState("home");
@@ -49,7 +50,11 @@ export default function Header() {
       </div>
 
       <div>
-        <button className="login">Login</button>
+        <button className="login header-login-btn">Login</button>
+      </div>
+
+      <div className="three-dots-menu">
+        <img src={ThreeDotsSymbol} width={35} alt="Three dots menu" />
       </div>
     </div>
   );
